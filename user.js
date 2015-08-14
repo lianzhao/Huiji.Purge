@@ -16,14 +16,11 @@ $(function(){
 	if (index > 0){
 		// normal page
 		title = current.substr(index + '/wiki/'.length);
-		console.log('title=' + title);
 	}
 	else{
 		// not a normal page
 		var index1 = current.indexOf('title=');
 		var index2 = current.indexOf('&');
-		console.log('index1=' + index1);
-		console.log('index2=' + index2);
 		title = current.substr(index1 + 'title='.length, index2 - index1 - 'title='.length);
 		console.log('title=' + title);
 	}
