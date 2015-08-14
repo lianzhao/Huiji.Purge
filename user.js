@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Huiji.Purge
 // @namespace    Huiji
-// @version      0.0.1
+// @version      0.0.2
 // @description  为灰机添加purge按钮
 // @author       lianzhao
 // @match        http://*.huiji.wiki/*
@@ -25,5 +25,5 @@ $(function(){
 		console.log('title=' + title);
 	}
 	var url = '/index.php?title=' + title + '&action=purge';
-	$('.nav-pills').append('<li><a href="' + url + '"><i class="fa fa-refresh"> purge</i></li>');
+	$('.sidebar-behavior > ul').append('<li><a href="' + url + '"><i class="fa fa-refresh"> purge</i></li>');
 });
